@@ -229,8 +229,27 @@
       position: relative;
       z-index: 1;
     }
+    
+    /* Estilos específicos para el nuevo texto flotante de "Kane Pizarro" */
+    .kane-name-float {
+        position: absolute; 
+        bottom: -5px; /* Ajuste para mantener una posición similar */
+        right: -5px; /* Ajuste para mantener una posición similar */
+        background-color: white; 
+        padding: 5px 15px; /* Ajuste del padding para el centrado */
+        border-radius: 8px; /* Reducción de border-radius para un look más limpio */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        color: var(--color-bordo);
+        /* Flexbox para centrar el contenido (el texto) */
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        min-width: 140px; /* Ancho mínimo para asegurar el centrado */
+        text-align: center; /* Centrado del texto dentro del div */
+    }
+
   </style>
-  <title>Kane Pizarro | Transforma la Imagen de tu Negocio</title>
+  <title>Kane Pizarro | Transforma tu negocio</title>
 </head>
 <body>
 
@@ -245,16 +264,15 @@
         <div class="md:w-1/2 flex justify-center">
           <div class="relative">
             <img src="kane-pizarro-fondo-blanco.png" alt="Kane Pizarro" class="w-64 h-64 md:w-80 md:h-80 kane-image animate-fadeIn">
-            <div class="absolute -bottom-5 -right-5 bg-white py-2 px-4 rounded-lg shadow-lg" style="color: var(--color-bordo);">
-              <p class="font-bold">+150 Negocios Transformados</p>
+            <div class="kane-name-float">
+              <p class="font-bold">KANE PIZARRO</p>
             </div>
-          </div>
+            </div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Mi Credo -->
   <section id="credo" class="py-16 bg-[var(--color-fondo)] fade-in">
     <div class="container mx-auto px-6">
       <div class="max-w-3xl mx-auto text-center">
@@ -279,7 +297,6 @@
     </div>
   </section>
 
-  <!-- EMPRENDIMIENTOS -->
   <section id="precios-emprendimientos" class="py-20 bg-[var(--color-negro)] text-white fade-in">
     <div class="container mx-auto px-6">
       <div class="text-center mb-12">
@@ -287,7 +304,6 @@
         <p class="text-lg text-gray-400 mt-2">Para los que quieren empezar bien</p>
       </div>
       
-      <!-- Precios principales -->
       <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="bg-[var(--color-bordo)] p-6 rounded-lg shadow-2xl text-center border-2 border-[var(--color-dorado)] transform scale-105">
           <h3 class="font-bold text-lg">DISEÑO GENERAL</h3>
@@ -309,7 +325,6 @@
         </div>
       </div>
       
-      <!-- Oferta horizontal para Emprendimientos -->
       <div class="horizontal-offers max-w-4xl mx-auto">
         <div class="offer-card">
           <div class="offer-content">
@@ -328,7 +343,6 @@
     </div>
   </section>
 
-  <!-- EMPRESAS -->
   <section class="py-20 bg-white fade-in">
     <div class="container mx-auto px-6">
       <div class="text-center mb-12">
@@ -336,7 +350,6 @@
         <p class="text-lg text-gray-600 mt-2">Para los que tienen objetivos serios</p>
       </div>
       
-      <!-- Precios principales -->
       <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="p-6 rounded-lg text-center price-card-highlight">
           <h3 class="font-bold text-lg text-[var(--color-bordo)]">IDENTIDAD DE MARCA</h3>
@@ -358,7 +371,6 @@
         </div>
       </div>
       
-      <!-- Oferta horizontal para Empresas -->
       <div class="horizontal-offers max-w-4xl mx-auto">
         <div class="offer-card">
           <div class="offer-content">
@@ -377,7 +389,6 @@
     </div>
   </section>
 
-  <!-- MAGNATES -->
   <section class="py-20 bg-[var(--color-fondo)] fade-in">
     <div class="container mx-auto px-6">
       <div class="text-center mb-12">
@@ -385,7 +396,6 @@
         <p class="text-lg text-gray-600 mt-2">Para los que tienen la mente ocupada</p>
       </div>
       
-      <!-- Temporizador de oferta - Solo para Magnates -->
       <div id="countdown-timer" class="max-w-2xl mx-auto mb-12">
         <div class="countdown-container">
           <h3 class="text-xl font-bold text-center mb-4">¡OFERTA EXCLUSIVA EN PLANES MENSUALES!</h3>
@@ -409,7 +419,6 @@
         </div>
       </div>
       
-      <!-- Precios principales -->
       <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="bg-white p-6 rounded-lg shadow-lg relative">
           <div id="despegue-offer-badge" class="offer-badge">OFERTA ACTIVA</div>
@@ -450,13 +459,12 @@
     </div>
   </section>
 
-  <!-- Botones flotantes -->
   <a href="https://wa.me/51966002733?text=Hola%20Kane,%20vi%20tu%20página%20y%20quiero%20consultar%20algo." target="_blank" class="whatsapp-float">
     <i class="fab fa-whatsapp"></i>
   </a>
   
-  <a href="https://www.facebook.com/messages/e2ee/t/2110158883103184" target="_blank" class="messenger-float">
-    <i class="fab fa-facebook-messenger"></i>
+  <a href="https://www.facebook.com/kane.pizarro.marketing" target="_blank" class="messenger-float">
+    <i class="fab fa-facebook"></i>
   </a>
 
   <footer class="bg-[var(--color-negro)] text-white py-12 fade-in">
